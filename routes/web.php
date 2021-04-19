@@ -2,6 +2,9 @@
 
 use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Route;
+use App\Models\User;
+
+use function GuzzleHttp\Promise\all;
 
 Route::get('/', function () {
     return view('welcome');
@@ -18,5 +21,7 @@ Route::get('/about ', function () {
 Route::get('/contact-sdhsjah-sjd', [ContactController::class, 'index'])->name('con');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return view('dashboard');
+
+    $users = User::all();
+    return view('dashboard',compact('users'));
 })->name('dashboard');
