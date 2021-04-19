@@ -8,7 +8,7 @@ Route::get('/', function () {
 });
 
 Route::get('/home', function () {
-    echo "THis is Home Page";
+    echo "This is Home Page";
 });
 
 Route::get('/about ', function () {
