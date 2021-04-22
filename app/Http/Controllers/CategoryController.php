@@ -11,8 +11,13 @@ class CategoryController extends Controller
     }
 
     public function AddCat(Request $request){
-        $validated = $request->validate([
+        $validatedData = $request->validate([
             'category_name' => 'required|unique:categories|max:255',
+
+        ],
+        [
+            'category_name.required' => 'Please Input Category name Anjay',
+            'category_name.max' => 'Category kurang dari 255 chars',
 
         ]);
     }
