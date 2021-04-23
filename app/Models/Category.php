@@ -16,8 +16,8 @@ class Category extends Model
         'category_name'
     ];
 
-    public function user(){
-        // Join 2 table One to One
-        return $this->hasOne(User::class, 'id', 'user_id');
-    }
+    // public function user(){
+    //     // Join 2 table One to One
+    //     return $this->hasOne(User::class, 'id', 'user_id');
+    // }
 }
