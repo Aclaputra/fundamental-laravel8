@@ -45,6 +45,7 @@ Route::get('/brand/delete/{id}', [BrandController::class, 'DeleteBrand']);
 
 // Multi image Route
 Route::get('/multi/image', [BrandController::class, 'Multipic'])->name('multi.image');
+Route::post('/multi/add', [BrandController::class, 'StoreImg'])->name('store.image');
 
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
