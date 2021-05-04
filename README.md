@@ -1,4 +1,4 @@
-## 🔥 Laravel 8 fundamental 
+# 🔥 Laravel 8 fundamental 
 Jet Stream Eloquent ORM, Query Builder, Laravel Pagination, Laravel Authentication, Soft Deletes, Force Deletes
 ## Tampilan Admin Dashboard 🚀
 ![](Readme/admin_dashboard_pic.JPG)
