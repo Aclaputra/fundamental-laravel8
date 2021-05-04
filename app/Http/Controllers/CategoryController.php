@@ -10,6 +10,10 @@ use Illuminate\Support\Facades\DB;
 
 class CategoryController extends Controller
 {
+    public function __construct() {
+        $this->middleware('auth');
+    }
+    
     // Category adalah Model dibuat untuk akses salah satu table dalam database MySQL
 
     // AllCategories
