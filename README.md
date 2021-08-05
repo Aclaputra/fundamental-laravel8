@@ -4,7 +4,7 @@ Jet Stream Eloquent ORM, Query Builder, Laravel Pagination, Laravel Authenticati
 ![](Readme/admin_dashboard_pic.JPG)
 
 ## Image Resize with Intervention Package
-
+Resize image with cropping them
 Source -> http://image.intervention.io/getting_started/installation
 
 ### Installation
